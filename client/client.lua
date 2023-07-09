@@ -240,10 +240,10 @@ end)
 RegisterNetEvent('startCarScene')
 AddEventHandler('startCarScene', function(source, args)
 local ped = PlayerPedId()
-    RequestCutscene("fix_low_mcs1", 8)
+    RequestCutscene("mph_nar_wee_ext", 8)
     while not (HasCutsceneLoaded()) do
         Wait(0)
-        RequestCutscene("fix_low_mcs1", 8)
+        RequestCutscene("mph_nar_wee_ext", 8)
     end
 
    TriggerEvent('save_all_clothes') 
